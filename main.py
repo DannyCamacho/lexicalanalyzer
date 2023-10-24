@@ -37,10 +37,12 @@ def main():  # main() function
     for lexeme in lexemes:
         if lexeme in token_dict:
             print(f"\"{lexeme}\" = {token_dict[lexeme]}")
-        elif re.match(r'^([\s\d]+)$', lexeme):
+        elif re.match(r'^([\s\d]+)$', lexeme):  # else if current lexeme is made up of only digits
             print(f"\"{lexeme}\" = {'integer'}")
-        else:
+        elif re.match(r'([^\W]+)$', lexeme):  # else if current lexeme is made up of word characters
             print(f"\"{lexeme}\" = {'identifier'}")
+        else:
+            print(f"\"{lexeme}\" = {'*ERROR*'}")
 
 
 if __name__ == "__main__":  # if we are in current file
