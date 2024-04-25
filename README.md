@@ -1,6 +1,6 @@
 # Lexical Analyzer
 
-Python program used to simulate the lexical analysis phase of code compilation using a given a code snippet and a set of lexeme-token pairs within a .txt file.
+Python program used to simulate the lexical analysis phase of code compilation using a given a code snippet and a set of lexeme-token pairs within their respective .txt files.
 
 ## Code Snippet
 
